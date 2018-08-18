@@ -1,0 +1,76 @@
+.movie
+  margin-left: auto
+  margin-right: auto
+  max-width: 1280px
+  &__backdrop
+    img
+      border-radius: 10px
+      border: 1px solid #ccc
+  &__title
+    color: white
+    margin-top: 15px
+    margin-bottom: 15px
+    font-size: 30px
+    span
+      color: #fbb587
+  &__slogan,
+  &__rating
+    color: white
+    font-size: 18px
+    margin-bottom: 15px
+    span
+      margin-left: 15px
+      color: #fbb587
+  &__description
+    color: white
+    font-size: 20px
+    margin-bottom: 30px
+    span
+      line-height: 1.5
+      margin-left: 15px
+  &__recommendations
+    display: flex
+    flex-wrap: wrap
+    padding-right: 15px
+    color: white
+    font-size: 20px
+    margin-bottom: 30px
+    &:last-child
+      margin-bottom: 0
+    &__link
+      max-width: 185px
+      height: auto
+      width: auto
+      text-decoration: none
+      word-wrap: break-word
+      color: #fbb587
+      margin: 0 15px 15px 15px
+      &:first-child
+        margin-left: 0
+    &__poster
+      margin-top: 15px
+      border: 1px solid #ccc
+      border-radius: 5px
+    &__title
+      margin-top: 10px
+      color: #ccc
+      text-align: center
+      font-size: 16px
+  &__keywords
+    &__link
+      padding: 4px 8px
+      border: 1px solid #fbb587
+      border-radius: 5px
+      height: auto
+      width: auto
+      text-decoration: none
+      word-wrap: break-word
+      color: #fbb587
+      margin: 0 15px 15px 15px
+      transition: .3s
+      &:first-child
+        margin-left: 15px
+      &:hover
+        background-color: #fbb587
+        color: black
+        border: 1px solid white

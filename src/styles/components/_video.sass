@@ -1,0 +1,69 @@
+.video-list
+  position: relative
+  padding-top: 40px
+  &__item
+    margin-bottom: 35px
+    padding-bottom: 40px
+    border-bottom: 1px solid rgba(#ccc, .1)
+    display: flex
+    &:first-child
+      padding-top: 35px
+    &:last-child
+      border-bottom: none
+    &__title
+      color: #ffffff
+      font-size: 24px
+      margin-bottom: 15px
+      font-weight: 500
+      letter-spacing: .3px
+    &__description
+      font-size: 14px
+      color: #ffffff
+      line-height: 20px
+      max-width: 500px
+      margin-bottom: 15px
+    &__info
+      padding-left: 40px
+    &__genres
+      margin-bottom: 15px
+      color: #fff
+      span
+        font-weight: 300
+        margin-left: 15px
+        margin-right: 5px
+        display: inline-block
+        position: relative
+        font-size: 14px
+        &:after
+          display: block
+          position: absolute
+          content: ""
+          border: 1px solid #cccccc
+          border-radius: 5px
+          width: calc(100% + 14px)
+          height: calc(100% + 6px)
+          left: -7px
+          top: -3px
+    &__link
+      position: relative
+      text-decoration: none
+      color: #fbb587
+      font-size: 16px
+      transition: .3s
+      padding: 4px 8px
+      &:hover
+        color: black
+        &:after
+          border: 1px solid white
+          z-index: -1
+          background-color: #fbb587
+      &:after
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        content: ""
+        border: 1px solid #fbb587
+        border-radius: 5px
+        height: 100%
+        width: 100%
